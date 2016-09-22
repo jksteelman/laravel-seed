@@ -11,6 +11,11 @@
 |
 */
 
+Route::get('/nfo', function() {
+	phpinfo();
+	return;
+});
+
 Route::get('/', function () {
     return view('welcome');
 });
